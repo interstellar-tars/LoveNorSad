@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,10 +6,33 @@ body {
 }
 
 header {
-  background: #333;
-  color: #fff;
-  padding: 1rem;
-  text-align: center;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6347; /* Tomato color for logo */
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
 }
 
 .post {
@@ -33,4 +57,13 @@ label, input, textarea {
 
 input, textarea {
   padding: 0.5rem;
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.margin-top {
+  margin-top: 2rem;
 }
