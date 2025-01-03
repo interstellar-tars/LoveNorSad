@@ -1,6 +1,9 @@
 async function fetchPosts() {
   try {
-    const response = await fetch('/api/posts'); // Relative path
+    const response = await fetch('https://lovenorsad.cubiodojo.workers.dev/api/posts'); // Full Worker URL
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     const posts = await response.json();
     const postsContainer = document.getElementById('posts');
     postsContainer.innerHTML = posts.map(post => `
@@ -13,5 +16,4 @@ async function fetchPosts() {
     console.error('Failed to fetch posts:', error);
   }
 }
-
 fetchPosts();
