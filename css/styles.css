@@ -65,3 +65,36 @@ input, textarea {
 .margin-top {
   margin-top: 2rem;
 }
+
+/* Specific styles for styleguide.html */
+.example {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+}
+
+pre {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 4px;
+}
+
+pre code {
+  font-family: monospace;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section h2 {
+  border-bottom: 2px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+footer {
+  margin-top: 2rem;
+}
