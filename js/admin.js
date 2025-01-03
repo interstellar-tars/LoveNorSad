@@ -5,7 +5,7 @@ document.getElementById('postForm').addEventListener('submit', async (e) => {
   const content = document.getElementById('content').value;
 
   try {
-    const response = await fetch('/api/post', {
+    const response = await fetch('https://lovenorsad.cubiodojo.workers.dev/api/post', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ title, content, password })
